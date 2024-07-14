@@ -42,7 +42,7 @@ export default function Home() {
   ]
   return (
     <>
-        <div className="mt-36 absolute right-[48px] z-10"><SideLink/></div>
+        <div className="md:mt-36 sm:mt-0 absolute right-[48px]  z-10"><SideLink/></div>
         <div className="md:mt-14 mt-[-50px] absolute z-10"><HeaderTxt/></div>
       <div className="relative w-full h-[480px] "> {/* Container with relative positioning */}
         <Image
