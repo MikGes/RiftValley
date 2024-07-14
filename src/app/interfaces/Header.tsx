@@ -58,7 +58,7 @@ export default function Header() {
 />
                 <div className="hidden md:flex flex-row gap-5 mt-12 ">
                     {links.map((link)=>(
-                        <Link href={link.path} className={`text-[16px] ${pathname == link.path?"text-cyan-500":""} hover:text-cyan-500 transition-all duration-300`}>{link.name}</Link>
+                        <Link key={link.name} href={link.path} className={`text-[16px] ${pathname == link.path?"text-cyan-500":""} hover:text-cyan-500 transition-all duration-300`}>{link.name}</Link>
                     ))}
                    
                 </div>
@@ -77,8 +77,8 @@ export default function Header() {
                                 <div className="p-4 pb-0">
                                     <div className="flex flex-col items-center justify-center w-full gap-3">
                                     {links.map((link)=>(
-                        <Button className={`w-full ${pathname == link.path?"text-white bg-cyan-400":""} border-2 border-white`}>
-                        <Link href={link.path} className={` text-[15px]  hover:text-cyan-400 transition-all duration-75`}>{link.name}</Link>
+                        <Button key={link.name} className={`w-full ${pathname == link.path?"text-white bg-cyan-400":""} border-2 border-white`}>
+                        <Link key={link.name} href={link.path} className={` text-[15px]  hover:text-cyan-400 transition-all duration-75`}>{link.name}</Link>
                     </Button>
                     ))} 
                                         <Button variant="outline">Donate</Button>

@@ -1,5 +1,5 @@
 export default function Myswiper(){
   return<>
-  Swipter
+   Board Members(On build)
   </>
 }

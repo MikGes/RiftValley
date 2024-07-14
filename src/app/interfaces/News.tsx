@@ -1,19 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { FaCalendar, FaLocationArrow } from "react-icons/fa";
-import { ScrollArea } from "@/components/ui/scroll-area"
 
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog"
 import Link from "next/link";
 export default function News({params}:{params:{name:String,description:String}}){
     return<>
