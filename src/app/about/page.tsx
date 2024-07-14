@@ -11,7 +11,7 @@ export default function About(){
 
     <div className='md:grid-cols-2 grid grid-cols-1 gap-8 px-4 items-center'>
         <p> RCWDO aspires for a poverty free and thriving just society leaving no one behind. RCWDO works for robust and resilient community to ensure improved and sustainable livelihood whereby the rights of the poor and vulnerable groups of the societies are promoted and protected through their proactive engagement as owner & change agent. In line with its mission, RCWDO works to strategically address the critical and interlocking problems of the soecity such as pverty, igonrance, illness and inequalities for just society. Accordinly it has organizational goals of: Ensure improved livelihoods & resilience capacity of the poor and vulnerable people through inclusive, climate smart, age & gender sensitive and sustainable innovative solutions. Enhance and advocate for inclusive and quality education and skills development of children, women, youth, and other vulnerable groups to improve educational performance and sustainable employment creation. </p>
-        <div className="relative w-full h-[480px] "> {/* Container with relative positioning */}
+        <div className="relative w-full h-[400px] "> {/* Container with relative positioning */}
         <Image
           src="/HomeImage.png" // path to the image in the public folder
           alt="Example Image"
@@ -21,7 +21,7 @@ export default function About(){
         />
       </div>
     </div>
-    <h2 className="text-center text-2xl font-bold mb-8 mt-10">ORGANIZATIONAL GOALS/ OVERALL ORGANIZATIONAL OBJECTIVES
+    <h2 className="text-center text-2xl font-bold mb-8 mt-14">ORGANIZATIONAL GOALS/ OVERALL ORGANIZATIONAL OBJECTIVES
     </h2>
    <div className='w-full flex flex-row justify-center'>
    <div className='grid grid-cols-1 gap-14 w-[80%] md:grid-cols-2 p-4'>

@@ -11,6 +11,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import HeaderTxt from "./interfaces/HeaderTxt";
 // import PartnerLogos from "./interfaces/PartnersSection";
 export default function Home() {
   const data = [
@@ -41,13 +42,14 @@ export default function Home() {
   ]
   return (
     <>
-        <div className="mt-36 absolute z-10"><SideLink/></div>
+        <div className="mt-36 absolute right-[48px] z-10"><SideLink/></div>
+        <div className="md:mt-14 mt-[-50px] absolute z-10"><HeaderTxt/></div>
       <div className="relative w-full h-[480px] "> {/* Container with relative positioning */}
         <Image
           src="/HomeImage.png" // path to the image in the public folder
           alt="Example Image"
           layout="fill" // To fill the container
-          objectFit="cover" // To ensure the image covers the container
+          objectFit="cover" // To ensure the image covers the containe
           className="rounded" // Optional: add any additional styles
         />
       </div>

@@ -14,6 +14,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
+import Link from "next/link";
 export default function News({params}:{params:{name:String,description:String}}){
     return<>
       <div className="mt-6">
@@ -44,31 +45,9 @@ export default function News({params}:{params:{name:String,description:String}})
        </div>
       </div>
      
-      <AlertDialog>
-  <AlertDialogTrigger className="w-max px-3 text-center border-2 border-cyan-400 mt-4 rounded-xl hover:bg-cyan-400 transition-all duration-200">Read More</AlertDialogTrigger>
-  <AlertDialogContent className="bg-white dark:bg-black">
-  <Image
-          src="/HomeImage.png" // path to the image in the public folder
-          alt="Example Image"
-          width={450}
-          height={200}
-          objectFit="cover" // To ensure the image covers the container
-           // Optional: add any additional styles
-        />
-    <AlertDialogHeader>
-      <AlertDialogTitle className="text-cyan-400">{params.name}</AlertDialogTitle>
-      
-      <ScrollArea className="h-max w-[460px] rounded-md border-0 p-4 overflow-auto">
-      {params.description} 
 
-      </ScrollArea>
-
-    </AlertDialogHeader>
-    <AlertDialogFooter>
-      <AlertDialogCancel>Close</AlertDialogCancel>
-    </AlertDialogFooter>
-  </AlertDialogContent>
-</AlertDialog>
+  <Button className="w-max px-3 text-center border-2 border-cyan-400 mt-4 rounded-xl hover:bg-cyan-400 transition-all duration-200"><Link href={"/news"}>Read More</Link></Button>
+ 
       </div>
       </div>
       </div>
