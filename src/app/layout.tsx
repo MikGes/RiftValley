@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./interfaces/Header";
 import Footer from "./interfaces/Footer";
-
+// import function to register Swiper custom elements
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

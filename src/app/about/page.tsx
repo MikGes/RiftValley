@@ -44,8 +44,10 @@ export default function About(){
     </div>
    </div>
    <Values/>
-  
    <Members/>
+   <h2 className="text-center text-2xl font-bold mb-8 mt-14">
+   PARTNERS & DONERS
+   </h2>
    <MySwiper/>
     </>
 }
